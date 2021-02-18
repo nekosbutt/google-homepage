@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+}
+
+/* font-family: 'Noto Sans', sans-serif;
+
+font-family: 'Noto Sans TC', sans-serif; */
+
+
+/*-------*/
+/*--Nav--*/
+/*-------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 45px;
+  color: rgba(0,0,0,0.87);
+  align-items: baseline;
+  padding: .5rem 1rem 0rem 1rem;
+}
+nav div a {
+  text-decoration: none;
+  color: #3c4043;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0rem .5rem;
+  font-size: .9rem;
+}
+nav div a:hover  {
+  text-decoration: underline;
+}
+.nav_right a {
+  font-size: .8rem;
+}
+.nav_right i {
+  position: relative;
+  padding: 0rem 1rem;
+  color: #5f6368;
+}
+.nav_right button {
+  padding: .5rem 1.4rem;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: white;
+  background-color: #1a73e8;
+  border: 0;
+  border-radius: .3rem;  font-size: .9rem;
+
+}
+.nav_right button:hover {
+  box-shadow: 1px 2px 3px rgb(66 133 244 / 30%);
+  background-color: #2b7de9;
+  cursor: pointer;
+}
+
+/*-------*/
+/*--MAIN--*/
+/*-------*/
+
+
+
+
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: calc(79.9vh - 45px)
+}
+.main img {
+  padding: 1.5rem;
+}
+.main_input {
+  border: 1px solid #dfe1e5;
+  padding: .2rem;
+  border-radius: 50rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+  margin: .3rem;
+  margin-bottom: 1.3rem;
+}
+.main_input:hover {
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 20%);
+}
+.main_input input {
+  width: 80%;
+  height: 2rem;
+  border: none;
+}
+.main_input input:focus {
+  outline: none;
+}
+.main_input i {
+  padding: 0 1rem;
+  color: #9aa0a6;;
+}
+.main_input .fa-microphone {
+  color: #1a73e8;
+}
+.main p {
+  padding: 1.4rem;
+  font-size: .8rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #3c4043;
+}
+.main p a {
+  padding: 0 .2rem;
+}
+.main a {
+  color: #1a0dab;
+}
+.main a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*----------------*/
+/*--MAIN BUTTONS--*/
+/*----------------*/
+
+.main_buttons button {
+  padding: .5rem 1.1rem;
+  border: 1px solid #f8f9fa;;
+  border-radius: .3rem;
+  background-color: #f8f9fa;
+  font-size: .9rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #3c4043;
+  margin: .5rem;
+  box-sizing: border-box;
+}
+.main_buttons button:hover {
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  border: 1px solid #dadce0;
+}
+
+
+
+
+/*----------*/
+/*--FOOTER--*/
+/*----------*/
+
+footer {
+
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(242 242 242);
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.footer_espana {
+  overflow-y: hidden;
+  padding: 1rem 2rem;
+  color: rgba(0,0,0,.54);
+  font-size: .9rem;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.footer_carbono {
+  overflow-y: hidden;
+  text-align: center;
+  padding: .9rem;
+}
+.footer_carbono img {
+  width: .8rem;
+}
+.footer_carbono a{
+  text-decoration: none;
+  color: rgba(0,0,0,.54);
+  font-size: .9rem;
+}
+.footer_links {
+  display: flex;
+  justify-content: space-around;
+  padding: .9rem;
+}
+.footer_links a {
+  text-decoration: none;
+  color: rgba(0,0,0,.54);
+  font-size: .9rem;
+  padding: .9rem .5rem;
+}
+.footer_links a:hover, .footer_carbono a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer_links-left, .footer_links-right {
+  overflow-y: hidden;
+}
+
+
+/*-----------*/
+/*--QUERIES--*/
+/*-----------*/
+
+@media (min-width: 1250px) {
+  .footer_lower {
+    display: flex;
+    justify-content: center;
+  }
+}
